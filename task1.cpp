@@ -25,13 +25,15 @@ float calc::sub(float, float){
     cin>>a; cout<<" from "; cin>>b;
     float subt=b-a;
     cout<<"The Subtraction is: "<<subt;
+    return 0;
 }
 //Defining multiplication
 float calc::mul(float, float){
     cout<<"Enter the two numbers you want the product of : ";
     cin>>a>>b;
     float mul=a*b;
-    return mul;
+    cout<<"Product is: "<<mul;
+    return 0;
 }
 //Defining Division
 float calc::div(float,float){
@@ -42,8 +44,10 @@ float calc::div(float,float){
     if (b==0){
         cout<<"Infinite";
     }else{
-        float mul=a*b;
-        }    cout<<"Result is "<< mul;
+        float div=a/b;
+        cout<<"Result is "<< div;
+    }
+    return 0;
 }
 int main(){
     calc calculator;
@@ -51,13 +55,13 @@ int main(){
     int x;
     do
     {
-        cout<<"\nWelcome to the Quick Calculator\n";
+        cout<<"\n\nWelcome to the Quick Calculator\n";
         cout<<"1. Addition\n";
         cout<<"2. Subtraction\n";
         cout<<"3. Multiplication\n";
         cout<<"4. Division\n";
         cout<<"5. Quit \n";
-        cout<<"\nWhat do you want to do :";
+        cout<<"\nWhat do you want to do :\n";
         cin>>x;
         switch(x)
         {
